@@ -41,7 +41,7 @@ class PolarDiagramStrategy(DiagramStrategy, ABC):
 
 
 class M_sum_DiagramStrategy(PolarDiagramStrategy):
-    name = "M"
+    name = "ЭM𝛴"
 
     def __call__(self, *args, **kwargs):
         polar_coords = ([FACTOR * r + ((P*r) / (2 * pi) * (1 - angle * sin(angle) - .5*cos(angle))), angle]
@@ -51,7 +51,7 @@ class M_sum_DiagramStrategy(PolarDiagramStrategy):
 
 
 class Q_DiagramStrategy(PolarDiagramStrategy):
-    name = "Q"
+    name = "ЭQ"
 
     def __call__(self, *args, **kwargs):
         polar_coords = ((FACTOR * r + (-P / (2 * pi) * (angle*cos(angle) + .5*sin(angle))), angle)
@@ -61,7 +61,7 @@ class Q_DiagramStrategy(PolarDiagramStrategy):
 
 
 class N_DiagramStrategy(PolarDiagramStrategy):
-    name = "N"
+    name = "ЭN"
 
     def __call__(self, *args, **kwargs):
         polar_coords = ((FACTOR * r + .8*(-P / (pi * 2)*(3/2*cos(angle)+angle*sin(angle))), angle)
