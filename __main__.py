@@ -131,5 +131,6 @@ class App:
         self.root.mainloop()
 
 
-app = App()
-app.run()
+if __name__ == '__main__':
+    app = App()
+    app.run()
