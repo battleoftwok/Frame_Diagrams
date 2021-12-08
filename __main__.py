@@ -119,7 +119,7 @@ class App:
         self.painter = Painter(strategy, self.canvas)
         self.painter.draw_sticks()
         self.painter.draw_line()
-        self.canvas.create_text(150, 50, text="Эпюра " + strategy.name,
+        self.canvas.create_text(150, 50, text=strategy.name,
                                 font=('Times', 30, 'bold italic'), fill='black')
 
     def clean_canvas(self):
