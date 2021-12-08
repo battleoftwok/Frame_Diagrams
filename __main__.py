@@ -103,7 +103,7 @@ class App:
     def __init__(self):
         # self.var = IntVar()
         self.root = Tk()
-        self.root.title("Практическое занятие №2. Вариант 2")
+        self.root.title("Практическое занятие №2. Вариант 1")
         self.canvas = Canvas(self.root, width=WIDTH, height=HEIGHT, bg='white')
 
         self.painter = Painter(self.all_diagrams[0], self.canvas)
