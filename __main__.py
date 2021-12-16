@@ -4,7 +4,7 @@ from tkinter import *
 from math import *
 
 WIDTH, HEIGHT = 820, 820
-AMOUNT = 3*2
+AMOUNT = 1
 RADIUS_SCALE_FACTOR = 100
 P = 780
 r = 1.35
@@ -137,7 +137,7 @@ class App:
                                       resolution=AMOUNT, orient=VERTICAL, command=self.change_amount)
 
         self.scale_for_angle = Scale(self.root, from_=0, to=360, length=700,
-                                      resolution=2, orient=VERTICAL, command=self.change_angle)
+                                      resolution=AMOUNT, orient=VERTICAL, command=self.change_angle)
 
         self.choose_color_button = Button(self.root, text="Choose diagram color", command=self.choose_drawning_color)
         self.choose_color_button.pack()
